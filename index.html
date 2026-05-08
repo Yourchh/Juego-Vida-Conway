@@ -2,10 +2,37 @@
 <html lang="es">
 <head>
     <meta charset="UTF-8">
-    <title>Juego de la Vida - Conway</title>
+    <title>Conway: Dual Mode</title>
+    <style>
+        body { background: #1a1a1a; color: #eee; font-family: sans-serif; text-align: center; }
+        canvas { background: #000; border: 2px solid #444; cursor: crosshair; margin-top: 10px; }
+        .controles { padding: 20px; background: #2a2a2a; }
+        button { padding: 10px 15px; margin: 5px; cursor: pointer; border: none; border-radius: 4px; background: #444; color: white; transition: 0.3s; }
+        button:hover { background: #666; }
+        .activo { background: #007bff !important; }
+        .instrucciones { font-size: 0.8em; color: #888; margin-top: 10px; }
+    </style>
 </head>
-<body onload="inicializa()">
-    <canvas id="pantalla" style="border: 1px solid #000;"></canvas>
-    <script src="js/juego.js"></script>
+<body onload="inicia()">
+    <div class="controles">
+        <button id="btn1" onclick="cambiarModo(1)" class="activo">Modo 1: Automático</button>
+        <button id="btn2" onclick="cambiarModo(2)">Modo 2: Editor</button>
+        <br>
+        <button onclick="inicializaTablero(tablero, true)">Reiniciar Aleatorio (T)</button>
+        <button onclick="inicializaTablero(tablero, false)">Vaciar Tablero (R)</button>
+        <div id="controlesEditor" style="display:none;">
+            <button onclick="controlaPausa()">Pausar/Reanudar (Espacio)</button>
+            <span id="txtFps">FPS: 20</span>
+            <button onclick="aumentaFPS()">+</button>
+            <button onclick="reduceFPS()">-</button>
+        </div>
+        <div class="instrucciones">
+            Modo Editor: Haz clic para estampar un patrón "Glider Gun". Usa las teclas indicadas entre paréntesis.
+        </div>
+    </div>
+
+    <canvas id="canvas"></canvas>
+
+    <script src="juego.js"></script>
 </body>
 </html>

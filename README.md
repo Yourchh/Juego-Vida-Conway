@@ -8,7 +8,7 @@ Puedes probar la simulación aquí:
 
 ## 📺 Demostración de funcionamiento
 ### 🎥 Funcionamiento del Modo Automático y Editor
-<video controls src="demo.mp4" title="Demo"></video>
+<video controls src="Yourchh/Juego-Vida-Conway/demo.mp4" title="Demo"></video>
 
 ## 🚀 Modos de Juego
 El proyecto cuenta con dos modalidades para experimentar:

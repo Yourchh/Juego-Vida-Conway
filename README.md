@@ -9,7 +9,7 @@ Puedes probar la simulación aquí:
 ## 📺 Demostración de funcionamiento
 ### 🎥 Funcionamiento del Modo Automático y Editor
 
-<video controls src="demo.mp4" title="Title"></video>
+https://github.com/user-attachments/assets/f55b36d8-324c-4cc8-ab5c-9e536f9b200a
 
 ## 🚀 Modos de Juegos
 El proyecto cuenta con dos modalidades para experimentar:

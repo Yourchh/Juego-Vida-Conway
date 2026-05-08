@@ -5,7 +5,7 @@ Esta es una implementación del famoso autómata celular de John Conway, desarro
 ## 📺 Demostración en vivo
 Aquí puedes ver el proyecto en funcionamiento y cómo interactuar con los patrones:
 
-<video controls src="Grabación de pantalla 2026-05-08 a la(s) 12.47.43 a.m..mov" title="Demostración"></video>
+<video controls src="demostracion.mp4" title="Demostración"></video>
 
 ## 🚀 Modos de Juego
 El proyecto cuenta con dos modalidades para experimentar:
